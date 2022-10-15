@@ -38,8 +38,25 @@
  }
 
  .container.footer-position {
-    //  display: flex;
-    //  align-items: baseline; убрал для мобильной версии
+    @media screen and (min-width:1200px) {
+            display: flex;
+            align-items: baseline;       
+        }
+   
+ }
+
+ .footer-position__tablet {
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-items: baseline;
+        gap: 70px;
+    }
  }
 
  .footer-form {
@@ -47,8 +64,11 @@
  }
 
  .form {
-    //  display: flex;
-    //  gap: 12px; убрал для мобильной версии 
+    @media screen and (min-width:1200px) {
+            display: flex;
+            gap: 12px;
+    
+        }
  }
 
  .footer-form__title {
@@ -60,6 +80,9 @@
      letter-spacing: 0.03em;
      text-transform: uppercase;
      color: var(--secondary-title-color);
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
  }
 
  .form__lable {
@@ -88,4 +111,16 @@
             letter-spacing: 0.03em;
     
             color: var(--secondary-text-color);}
+
+    @media screen and (min-width:768px) {
+        width: 450px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width:1200px) {
+        width: 358px;
+        
+    }
+    
  }
