@@ -1042,8 +1042,17 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-checkbox__input {
@@ -1064,9 +1073,15 @@ img {
 .modal-checkbox__icon {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__icon--check,
+.modal-checkbox__icon {
+    left: 5px;
+  }
 }
 
 .modal-checkbox__icon--check {
@@ -1089,15 +1104,29 @@ img {
   display: block;
   margin-left: 5px;
   color: var(--accent-color);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
 }
 .modal-checkbox__link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 5px;
+  bottom: 0;
   width: 100%;
   height: 1px;
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__link::after {
+    bottom: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox__link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 /* Portfolio */
