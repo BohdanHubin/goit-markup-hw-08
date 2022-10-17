@@ -74,7 +74,7 @@
 }
 
 .mobile-contact {
-    margin-bottom: auto;
+    margin-top: 302px;
 }
 
 .mobile-contact__link {
@@ -102,4 +102,24 @@
         letter-spacing: 0.02em;
     
         color: var(--text-color);
+}
+
+.mobile-socialmedia {
+    display: flex;
+    margin-top: 64px;
+}
+
+.mobile-socialmedia li:not(:last-child){
+    border-right: 1px solid var(--modal-input-border);
+}
+
+.mobile-socialmedia_link {
+    display: block;
+    padding: 5px 10px;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
 }
