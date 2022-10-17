@@ -8,10 +8,14 @@
      background-color: var(--secondary-background-color);
  }
 .footer-contact {
-    @media screen and (max-width:1190px) {
+    @media screen and (max-width:1199px) {
         margin-bottom: 60px;
     }
-    
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
 }
 
  .footer-contact__list {
@@ -43,7 +47,7 @@
             color: var(--accent-color);}
  }
 
- .container.footer-position {
+ .footer-position {
     @media screen and (min-width:1200px) {
             display: flex;
             align-items: baseline;       
