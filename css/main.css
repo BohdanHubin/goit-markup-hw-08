@@ -33,6 +33,10 @@ body {
   background-color: var(--base-backgroud-color);
 }
 
+body .is-open {
+  overflow-y: scroll;
+}
+
 h1,
 h2,
 h3,

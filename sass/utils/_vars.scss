@@ -32,3 +32,7 @@
      background-color: var(--base-backgroud-color);
 
  }
+
+ body .is-open {
+    overflow-y: scroll;
+ }
